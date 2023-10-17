@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>MAYKAY</title>
+</head>
+<body>
+     <section class="header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">à propos</a></li>
+                    <li><a href="course.html">Services</a></li>
+                    <li><a href="blog.html">Prendre un rdv</a></li>
+                    <li><a href="contact.html">CONTACT</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
+        </nav>
+
+        <!-- adding text to center of the page -->
+        <div class="text-box">
+            <h2>Optimisez vos transactions immobilières en toute confiance <br> grâce à nos services d'états des lieux et de visites de <br> commercialisations, garants d'une parfaite transparence</h2>
+            <a href="" class="hero-btn">Contactez nous</a>
+        </div>
+    </section>
+
+    <!-- section en savoir plus-->
+
+    <section class="knowMore">
+            <h2 class="section-heading" id="sav" data-outline="En savoir plus sur Maykay">En savoir plus sur Maykay</h2>
+            <div id="bar"></div>
+        <div class="row">
+            <div class="description">
+                <h3>MAYKAY est une entreprise indépendante spécialisée dans la réalisation d'états des lieux, de visites de commercialisation et d'aide et conseil dans la commercialisation des biens immobiliers. 
+                    <br> <br>
+                La structure met son savoir-faire au service de ses clients pour garantir des commercialisations immobilières transparentes, professionnelles et sans tracas.
+                    <br> <br>
+                Nous nous engageons à offrir des services de qualité et à établir des relations de confiance avec nos clients. 
+                    <br> <br>
+                Notre priorité est de simplifier et de rendre le processus immobilier aussi fluide que possible, en veillant à ce que nos clients bénéficient des meilleures opportunités sur le marché.
+                </h3>
+            </div>
+             <div class="know-col">
+                 <img src="img/form.png" alt="" id="img_form">
+                <div id="logos">
+                    <img src="img/web.png" alt="" id="img_logo">
+                    <img src="img/web1.png" alt="" id="img_icon">
+                </div>
+                <p>Vous êtes propriétaire d’un logement, d’un local commercial, vous disposez d’un parc de logements vous souhaitez mettre en location ?  Vous souhaitez mettre toutes les chances de votre côté et être conseillé sur l’esthétique de vos biens ? <br> <br>
+                Faites confiance à MAYKAY pour une expérience professionnelle, fiable et personnalisée .
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- section nos services -->
+    <section class="services">
+        <h2 class="section-heading" data-outline="Nos Services">Nos Services</h2>
+        <div id="bar"></div>
+        <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
+        <div class="row">
+            <div class="services-col">
+                <img src="img/reliable.png" alt="">
+                <h3>États des lieux précis et rigoureux</h3>
+                <p>Nous réalisons des états des 
+                lieux détaillés et rigoureux, en utilisant des 
+                outils technologiques avancés pour assurer 
+                une précision et une fiabilité maximales. 
+                Nos équipes veillent à documenter 
+                chaque détail de l'état du bien, 
+                protégeant ainsi les intérêts de 
+                toutes les parties impliquées.</p>
+            </div>
+            <div class="services-col">
+                <img src="img/winner.png" alt="">
+                <h3>Visites de commercialisation efficaces </h3>
+                <p>Nous organisons des visites de commercialisation des logements, des locaux commerciaux mettant en avant les atouts de chaque bien immobilier. Nos équipes qualifiées guident les visiteurs à travers les propriétés, répondent à leurs questions et mettent en valeur les caractéristiques uniques de chaque bien, contribuant ainsi à accélérer le processus de vente ou de location.</p>
+            </div>
+            <div class="services-col">
+                <img src="img/checkmark.png" alt="">
+                <h3>Accompagnement personnalisé </h3>
+                <p>Nous offrons un service complet d'accompagnement pour nos clients souhaitant vendre ou louer leur bien immobilier. Cela comprend un diagnostic précis du bien, des conseils professionnels pour optimiser sa présentation sur le marché, ainsi que des stratégies de commercialisation efficaces pour attirer les acheteurs ou les locataires potentiels</p>
+            </div>
+        </div>
+    </section>
+
+     <!-- call to action -->
+    <section class="cta">
+        <h1>Prendre Rendez-vous</h1>
+        <p>Vous pouvez prendre rendez-vous selon votre convenance !</p>
+        <a href="" class="hero-btn">Reserver</a>
+    </section>
+    
+     <!-- testimonials section -->
+    <section class="testimonials">
+        <h2 class="section-heading" data-outline="Ils nous ont fait confiance">Ils nous ont fait confiance</h2>
+        <div id="bar"></div>
+        <p>Quelques témoignages de nos clients</p>
+        <div class="row">
+            <div class="testimonial-col">
+                <img src="img/user1.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam inventore, placeat, tenetur magnam obcaecati temporibus quo facere totam suscipit quidem esse, hic at! Eum corporis quod aliquid voluptatem nemo aliquam?</p>
+                    <h3>Christine Berkley</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-0"></i>
+                </div>
+            </div>
+            <div class="testimonial-col">
+                <img src="img/user2.jpg" alt="">
+                <div>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam inventore, placeat, tenetur magnam obcaecati temporibus quo facere totam suscipit quidem esse, hic at! Eum corporis quod aliquid voluptatem nemo aliquam?</p>
+                    <h3>David Byer</h3>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star"></i>
+                    <i class="fa fa-star-half-0"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- partenaires -->
+    <section class="part">
+        <h2 class="section-heading" data-outline="Nos partenaires">Nos partenaires</h2>
+        <div id="bar"></div>
+        <div class="logos">
+            <div class="logos-slide">
+                <img src="img/part1.png" alt="">
+                <img src="img/part2.png" alt="">
+                <img src="img/part3.png" alt="">
+                <img src="img/part4.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    
+    <script src="index.js"></script>
+</body>
+</html>
