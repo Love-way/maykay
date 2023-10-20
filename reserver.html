@@ -1,1 +1,117 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+
+    <!-- icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>MAYKAY</title>
+</head>
+<body>
+    <section class="header-res res-section">
+        <nav>
+            <a href="index.html"><img src="img/websitelogo.png" alt="logo"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">à propos</a></li>
+                    <li><a href="course.html">Services</a></li>
+                    <li><a href="#">Prendre un rdv</a></li>
+                    <li><a href="contact.html">CONTACT</a></li> 
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i> 
+        </nav>
+
+        <!-- adding text to center of the page -->
+        <div class="text-box-res">
+            <h2>Merci de compléter les informations ci-dessous, <br>
+                nos équipes prendront le temps de vous rappeler <br>
+                et convenir d’un rendez-vous ensemble</h2>
+        </div>
+    </section>
+
+    <section class="formulaire">
+        <div class="wrapper">
+            <h2>Vous êtes?</h2>
+            <div class="row">
+                <div class="etes-l" style="width:15%">
+                    <input type="checkbox" id="particulier" name="particulier" value="particulier"> <label for="">Un particulier</label>
+                </div>
+                <div class="etes-r" style="width:85%">
+                    <input type="checkbox" id="societe" name="societe" value="societe"> <label for="">Une société</label>
+                    <br> <br>
+                </div>
+            </div>
+
+            <h2>Vous disposez?</h2>
+            <div id="disposez">
+                <input type="checkbox" id="logement" name="logement" value="logement"> <label for="">d'un logement</label>
+                <input type="checkbox" id="ensemble" name="ensemble" value="ensemble"> <label for="">d’un ensemble de parcs de logement</label>
+                <input type="checkbox" id="commercial" name="commercial" value="commercial"> <label for="">local commercial</label>
+                <br> <br>
+            </div>
+
+            <h2>Quelle prestation souhaitez-vous ?</h2>
+            <div id="prestation">
+                <input type="checkbox" id="lieux" name="lieux" value="lieux"> <label for="">Etat des lieux d’entrée</label>
+                <input type="checkbox" id="sortie" name="sortie" value="sortie"> <label for="">Etat des lieux de sortie</label>
+                <input type="checkbox" id="Pré-état" name="Pré-état" value="Pré-état"> <label for="">Pré-état des lieux</label> <br> <br>
+                <input type="checkbox" id="commercialisation" name="commercialisation" value="commercialisation"> <label for="">Visite de commercialisation</label>
+                <input type="checkbox" id="immobilier" name="immobilier" value="immobilier"> <label for="">Aide et conseil à la commercialisation de votre bien immobilier</label>
+                <br> <br>
+            </div>
+
+            <h2>A quel moment pouvons-nous vous contacter ?</h2>
+            <div id="moment">
+                <input type="checkbox" id="matinée" name="matinée" value="matinée"> <label for="">Matinée</label>
+                <input type="checkbox" id="midi" name="midi" value="midi"> <label for="">Après-midi</label>
+                <input type="checkbox" id="soirée" name="soirée" value="soirée"> <label for="">Soirée</label>
+                <br> <br>
+            </div>
+
+            <h2>Souhaitez-vous apporter d’autres précisions ?</h2>
+            <div id="precisions">
+                <div class="form-group" id="mes">
+                    <textarea placeholder="Message" rows="4"></textarea>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="nav-links" id="navLinks">
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">à propos</a></li>
+                    <li><a href="course.html">Services</a></li>
+                    <li><a href="blog.html">Prendre un rdv</a></li>
+                    <li><a href="contact.html">CONTACT</a></li> 
+                </ul>
+                <div id="foot-cont">
+                    <span>06.95.66.95.00</span> &nbsp;&nbsp; <span>maykayhelp@mail.com</span>
+                </div>
+            </div>
+            <ul class="socials">
+                <li><a href="#"><i class="fa-brands fa-instagram net"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-linkedin-in net"></i></a></li>
+            </ul>
+            <p>@ 2023 MAYKAY. tous droits reservés.</p>
+        </div>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
