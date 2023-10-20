@@ -13,20 +13,22 @@
     <!-- icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <title>MAYKAY</title>
 </head>
 <body>
-     <section class="header">
+     <section class="header" data-aos="fade-in">
         <nav>
             <a href="index.html"><img src="img/websitelogo.png" alt="logo"></a>
             <div class="nav-links" id="navLinks">
                 <i class="fa fa-times" onclick="hideMenu()"></i>
                 <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="about.html">à propos</a></li>
-                    <li><a href="course.html">Services</a></li>
-                    <li><a href="blog.html">Prendre un rdv</a></li>
-                    <li><a href="contact.html">CONTACT</a></li> 
+                    <li><a href="#">Accueil</a></li>
+                    <li><a href="#about">à propos</a></li>
+                    <li><a href="#ser-sec">Services</a></li>
+                    <li><a href="#cta-sec">Prendre un rdv</a></li>
+                    <li><a href="#cont-sec">CONTACT</a></li> 
                 </ul>
             </div>
             <i class="fa fa-bars" onclick="showMenu()"></i> 
@@ -35,15 +37,15 @@
         <!-- adding text to center of the page -->
         <div class="text-box">
             <h2>Optimisez vos transactions immobilières en toute confiance <br> grâce à nos services d'états des lieux et de visites de <br> commercialisations, garants d'une parfaite transparence</h2>
-            <a href="" class="hero-btn">Contactez nous</a>
+            <a href="#cont-sec" class="hero-btn">Contactez nous</a>
         </div>
     </section>
 
     <!-- section en savoir plus-->
 
-    <section class="knowMore">
+    <section class="knowMore" id="about" data-aos="fade-up" data-aos-once="false">
             <h2 class="section-heading" id="sav" data-outline="En savoir plus sur Maykay">En savoir plus sur Maykay</h2>
-            <div id="bar"></div>
+            <div class="bar"></div>
         <div class="row">
             <div class="description">
                 <h3>MAYKAY est une entreprise indépendante spécialisée dans la réalisation d'états des lieux, de visites de commercialisation et d'aide et conseil dans la commercialisation des biens immobiliers. 
@@ -69,11 +71,11 @@
     </section>
 
     <!-- section nos services -->
-    <section class="services">
+    <section class="services" id="ser-sec" data-aos="fade-right" data-aos-once="false">
         <h2 class="section-heading" data-outline="Nos Services">Nos Services</h2>
-        <div id="bar"></div>
+        <div class="bar" id="servbar"></div>
         <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p> -->
-        <div class="row">
+        <div class="row" data-aos="fade-up">
             <div class="services-col">
                 <img src="img/reliable.png" alt="">
                 <h3>États des lieux précis et rigoureux</h3>
@@ -86,12 +88,12 @@
                 protégeant ainsi les intérêts de 
                 toutes les parties impliquées.</p>
             </div>
-            <div class="services-col">
+            <div class="services-col" id="second">
                 <img src="img/winner.png" alt="">
                 <h3>Visites de commercialisation efficaces </h3>
                 <p>Nous organisons des visites de commercialisation des logements, des locaux commerciaux mettant en avant les atouts de chaque bien immobilier. Nos équipes qualifiées guident les visiteurs à travers les propriétés, répondent à leurs questions et mettent en valeur les caractéristiques uniques de chaque bien, contribuant ainsi à accélérer le processus de vente ou de location.</p>
             </div>
-            <div class="services-col">
+            <div class="services-col" id="third">
                 <img src="img/checkmark.png" alt="">
                 <h3>Accompagnement personnalisé </h3>
                 <p>Nous offrons un service complet d'accompagnement pour nos clients souhaitant vendre ou louer leur bien immobilier. Cela comprend un diagnostic précis du bien, des conseils professionnels pour optimiser sa présentation sur le marché, ainsi que des stratégies de commercialisation efficaces pour attirer les acheteurs ou les locataires potentiels</p>
@@ -100,16 +102,16 @@
     </section>
 
      <!-- call to action -->
-    <section class="cta">
+    <section class="cta" id="cta-sec" data-aos="fade-in" data-aos-once="false">
         <h1>Prendre Rendez-vous</h1>
         <p>Vous pouvez prendre rendez-vous selon votre convenance !</p>
-        <a href="" class="hero-btn">Reserver</a>
+        <a href="reserver.html" class="hero-btn">Reserver</a>
     </section>
     
      <!-- testimonials section -->
-    <section class="testimonials">
+    <section class="testimonials" data-aos="fade-left" data-aos-once="false">
         <h2 class="section-heading" data-outline="Ils nous ont fait confiance">Ils nous ont fait confiance</h2>
-        <div id="bar"></div>
+        <div class="bar"></div>
         <p>Quelques témoignages de nos clients</p>
         <div class="row">
             <div class="testimonial-col">
@@ -140,9 +142,9 @@
     </section>
 
     <!-- partenaires -->
-    <section class="part">
+    <section class="part" data-aos="fade-up" data-aos-once="false">
         <h2 class="section-heading" data-outline="Nos partenaires">Nos partenaires</h2>
-        <div id="bar"></div>
+        <div class="bar"></div>
         <div class="logos">
             <div class="logos-slide">
                 <img src="img/part1.png" alt="">
@@ -154,7 +156,7 @@
     </section>
 
     <!-- section contact -->
-    <section class="contact-us">
+    <section class="contact-us" id="cont-sec" data-aos="zoom-in" data-aos-once="false">
         <h2 class="section-heading" data-outline="Contactez-Nous">Contactez-Nous</h2>
         <div class="row">
             <div class="contact-col">
@@ -201,18 +203,18 @@
         </div>
     </section>
 
-    <footer>
+    <footer data-aos="fade-down" data-aos-once="false">
         <div class="footer-content">
             <div class="nav-links" id="navLinks">
                 <ul>
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="about.html">à propos</a></li>
                     <li><a href="course.html">Services</a></li>
-                    <li><a href="blog.html">Prendre un rdv</a></li>
+                    <li><a href="reserver.html">Prendre un rdv</a></li>
                     <li><a href="contact.html">CONTACT</a></li> 
                 </ul>
                 <div id="foot-cont">
-                <span>06.95.66.95.00</span> &nbsp;&nbsp; <span>maykayhelp@mail.com</span>
+                    <span>06.95.66.95.00</span> &nbsp;&nbsp; <span>maykayhelp@mail.com</span>
                 </div>
             </div>
             <ul class="socials">
@@ -224,5 +226,18 @@
     </footer>
     
     <script src="index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 2000,
+        once: true,
+      });
+
+      window.addEventListener("scroll", function(){
+        var header = document.querySelector("header");
+        header.classList.toggle("sticky", window.scrollY > 0);
+      })
+    </script>
 </body>
 </html>
